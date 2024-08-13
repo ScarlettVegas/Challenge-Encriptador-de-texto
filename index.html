@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <main class="contenedor">
+        <section class="contenedor-contenido">
+            <textarea class="contenedor-contenido-texto" id="textoEntrada" placeholder="Ingresa tu mensaje"></textarea>
+            <div class="contenedor-contenido-botones">
+                <button onclick="encriptarTexto();" class="boton-encriptar">Encriptar</button>
+                <button onclick="desencriptarTexto();" class="boton-encriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenedor-resultado">
+            <div id="area-resultado"> 
+                <img id="idImagen" class="resultado-img" src="img/Detective-lupa.png" alt="Detective con lupa">
+                <h2 id="mensajeSinTexto">Ingrese un mensaje para encriptar o desencripar y aparecera aqui.</h2>
+            </div>
+            <button onclick="copiarTexto();" id="btnCopiar" class="boton-copiar">Copiar</button>
+        </section>
+            
+    </main>
+
+    <footer class="footer">
+        <p class="footer-texto">Desarrollado por Scarlett Vegas</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+
+</body>
+</html>
